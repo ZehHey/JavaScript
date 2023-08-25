@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 02</title>
+    <title>Aula 03</title>
     <style>
         body{
             background-color: rgb(118, 118, 182);
@@ -19,7 +19,33 @@
 </head>
 <body>
     <h1>Aula 03</h1>
-    
-    <a href="ex003.html">Exercício 03</a>
+    <h3>Sinal "+"</h3>
+    <p>Serve como simbolo de adição e também de concatenação.</p>
+    <p>Pra ser uma adição é necessário ter <i>number + number.</i></p>
+    <p><i>string + string</i> se torna concatenação.</p>
+    <h3>Conversão de variável</h3>
+    <p>O comando <i>windows.prompt</i> recebe valores em <i>string</i>, então é necessário fazer a conversão dessas variáveis.</p>
+    <p>Comandos: <i>Number.parseInt()</i> ou <i>Number.parseFloat()</i>, mas é possivel apenas usar o comando <i>Number</i> e o próprio script decidirá qual o tipo mais adequado.</p>
+    <p>Para determinar o número de casas decimais em um <i>float</i>, usa-se o comando <i>n1.toFixed(x)</i>, onde x é o número de casas desejado.</p>
+    <p>Para converter uma variável para <i>string</i>, usa-se os comandos <i>String(n)</i> ou <i>n.toString</i>.</p>
+
+    <h3>Formatação de strings</h3>
+    <p>Para utilizar o <i>Templates Strings</i> a declaração precisa estar entre crases e a variável dentro do ${}.</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+    </script>
+
+    <script>
+        /*var nome = window.prompt('Qual é o seu nome?')
+        window.alert('Bem-vindo, ' + nome + '!') // + sinal de concatenação*/
+        /*var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = window.prompt('Digite outro número')
+        var s = n1 + Number(n2)
+        window.alert(`A soma é igual a ${s}`)*/
+    </script>
+    <br>
+    <a href="ex003.html">Exercício 04</a>
 </body>
 </html>
