@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 05</title>
+</head>
+<body>
+    <h1>Operadores pt 2</h1>
+    <h2>Relacionais</h2>
+    <ul>
+        <li>> - maior que</li>
+        <li>< - menor que</li>
+        <li>>= - maior ou igual</li>
+        <li><= - menor ou igual</li>
+        <li>== - igual</li>
+        <li>!= - diferente</li>
+    </ul>
+    <p>Operadores relacionais terão resultados boleanos (True ou False)</p>
+    <script>
+        document.write('8 <= 7 = ', 8<=7, '<br>')
+        document.write(`4 != 5 = `, 4!=5)
+    </script>
+    <h4>Identidade ou igualdade restrita</h4>
+    <p>5 == 5 = true</p>
+    <p>5 == '5' = true</p>
+    <p>5 === 5 = true &nbsp; &nbsp; &nbsp; 5 !== 5 = false</p>
+    <p>5 === '5' = false &nbsp; &nbsp; 5 !== '5' = true</p>
+    <br>
+    <h2>Lógicos</h2>
+    <h6>Ordem de precedência</h6>
+    <ul>
+        <li>! - negação</li>
+        <ul style="font-size: 0.7em;">
+            <li>! true = false</li>
+            <li>! false = true</li>
+        </ul>
+        <li>&& - conjunção (e)</li>
+        <ul style="font-size: 0.7em;">
+            <li>true && true = true</li>
+            <li>true && false = false</li>
+            <li>false && true = false</li>
+            <li>false && false = false</li>
+        </ul>
+        <li>|| - disjunção (ou)</li>
+        <ul style="font-size: 0.7em;">
+            <li>true || true = true</li>
+            <li>true || false = true</li>
+            <li>false || true = true</li>
+            <li>false || false = false</li>
+        </ul>
+    </ul>
+    <br>
+    <h2>Ordem de precedência entre os operadores</h2>
+    <ol>
+        <li>Operadores Matemáticos</li>
+        <li>Operadores Relacionais</li>
+        <li>Operadores Lógicos</li>
+    </ol>
+    <br>
+    <h2>Ternário</h2>
+    <p>"?:"</p>
+    <p>Ex: 'teste' ? 'true' : 'false'</p>
+    <ul>
+        <li>teste = teste lógico a ser realizado</li>
+        <li>true = o que deve acontecer se o resultado do teste for igual a true</li>
+        <li>false = o que deve acontecer se o resultado do teste for igual a false</li>
+    </ul>
+    <p><strong>Ex: <u>média >= 7.0 ? "Aprovado" : "Reprovado"</u></strong></p>
+    <br>
+    <a href="ex001.html">01 - Exercício 01</a><br>
+    <a href="ex002.html">02 - Exercício 02</a><br>
+    <a href="ex003.html">03 - Conversão de variável</a><br>
+    <a href="ex004.html">04 - Operadores pt1</a><br>
+</body>
+</html>
