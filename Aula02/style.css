@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 15px;
+}
+
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover{
+    color: greenyellow
+}
+.codex{
+    background-color: white;
+    color: black;
+    max-width: 400px;
+    padding-left: 10px;
+}
+
+#diagrama>p{
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+#diagrama{
+    display: block;
+    max-width: 200px;
+    border: 1px solid white;
+    
+    padding: 15px 50px 25px 100px;
+    justify-content: center;
+    align-items:center;
+    position: inherit;  
+
+}

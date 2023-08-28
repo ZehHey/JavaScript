@@ -8,5 +8,72 @@
 </head>
 <body>
     
+    <h1>Iniciando estudos com DOM</h1>
+    <h3>O que é DOM?</h3>
+    <p>DOM - Documento Object Model</p>
+    <p>É o conjunto de objetos dentro do seu navegador, que vai dar acesso aos componentes internos do seu website.</p>
+    <br>
+    <h3>Árvore DOM</h3>
+    <p>Basicamente a árvore DOM começa da raiz, a qual chamamos de <i>window</i>.Então tudo, no código JS, está dentro de um objeto chamado window</p>
+    <p>Dentro do window teremos outros objetos como: <i>location, document, history,</i> etc.</p>
+    <ul>
+        <li><i>location</i> - diz a localizaçãodo site, a URL,  a página atual, qual foi a página anterior;</li>
+        <li><i>document</i> - o documento atual;</li>
+        <li><i>history</i> - guarda as informações de navegação;</li>
+    </ul>
+
+    <p>Dentro do objeto <i>document</i>, existe o objeto <i>html</i>.</p>
+    <spam id="diagrama">
+        <p>window</p>
+        <p>&nbsp;&nbsp;&nbsp;|__ location</p>
+        <p>&nbsp;&nbsp;&nbsp;|__ document</p>
+        <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ html</p>
+        <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ head</p>
+        <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ body</p>
+        <p>&nbsp;&nbsp;&nbsp;|__ history&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+    </spam>
+    <br>
+
+    <p>Todos esses objetos da árvore DOM são elementos que podem ser selecionados.</p>
+    <br>
+    <h3>Selecionando elementos</h3>
+    <p>São cinco métodos:</p>
+    <ul>
+        <li><i>por Marca: </i><code>getElementsbyTagName()</code></li>
+        <ul>
+            <li><code>window.document.getElementsbyTagName('h3')[0]</code></li>
+            <code>var st = window.document.getElementsByTagName('h3')[0]
+                window.document.write('Subtitulo: ' + st.innerText)</code><br>
+            
+            <div class="codex">
+                <script>
+                    var st = window.document.getElementsByTagName('h3')[0]
+                    window.document.write('Subtitulo: ' + st.innerText)
+                </script>
+            </div>
+        </ul>      
+        <li><i>por ID: </i><code>getElementsbyID()</code></li>
+        <li><i>por Nome: </i><code>getElementsbyName()</code></li>
+        <li><i>por Classe: </i><code>getElementsbyClassName()</code></li>
+        <li><i>por Seletor: </i><ul>
+            <li><code>querySelector()</code></li>
+            <li><code>querySelectorAll()</code></li>
+            <ul>
+                <li><code>
+                    window.document.querySelector('div#especial').style.color='blue'</code></li>
+                
+                <div class="codex">
+                    <div id="especial">
+                        <script id="especial">
+                            window.document.querySelector('div#especial').style.color='green'
+                            window.document.write('Mudei a cor do texto!')
+                        </script>
+                    </div>
+                </div></ul></ul></li></ul>
+    <br>
+    <a href="index.html">Índice</a>
+    
+    
 </body>
 </html>
