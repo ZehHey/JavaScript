@@ -5,20 +5,29 @@ body{
     padding-left: 15px;
 }
 
+h4{
+    margin-bottom: 10px;
+}
+
 a{
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
+    border: 1px solid white;
+    display: block;
+    max-width: 180px;
+    border-radius: 5px;
+    
+
 }
 
 a:hover{
-    color: greenyellow
-}
-.codex{
-    background-color: white;
     color: black;
-    max-width: 400px;
-    padding-left: 10px;
+    background-color: white;
+    
 }
+
+
+
 
 #diagrama>p{
     padding: 0px;
@@ -37,4 +46,102 @@ a:hover{
     align-items:center;
     position: inherit;  
 
+}
+
+.codlink{
+    color: white;
+    background-color: black;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.codlinkpq{
+    color: white;
+    border: 1px solid white;
+    width: 80px;
+    height: 19px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2px;
+    border-radius: 5px;
+
+
+}
+
+.codlinkpq > a{
+    height: 18px;
+    color: white;
+    background-color: black;
+    font-size: 0.9em;
+    display: contents;
+
+    position: static;
+}
+
+.codlinkpq > a:hover{
+    color: black;
+
+}
+.codlinkpq:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    width: 80px;
+    height: 19px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+img{
+    margin: 50px;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+#area0{
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+    margin: 10px 20px 40px 20px;
+    display: inline-block;
+    
+}
+#area1{
+    font-size: 2em;
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+    margin: 10px 20px 40px 20px;
+    display: inline-block;
+}
+.codex{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    display: block;
+    max-width: 180px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 9px;
+
+}
+#res{
+    margin-bottom: 50px;
 }

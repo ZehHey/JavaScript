@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos DOM</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+    <p>É tudo aquilo que possa ocorrer com um elemento, por exemplo: eventos de mouse. Os eventos podem ser configurados na parte html ou diretamente no JavaScript.</p>
+    <h3>Exemplos de eventos de mouse</h3>
+    <ul>
+        <li><i>mouseenter - </i>Quando o cursor do mouse fica sobre o elemento;</li>
+        <li><i>mouseout - </i>Quando o cursor do mouse sai do elemento;</li>
+        <li><i>mousemove - </i>Quando o cursor do mouse se move sobre o elemento;</li>
+        <li><i>mousedown - </i>Quando o botão esquerdo do mouse é pressionado;</li>
+        <li><i>mouseup - </i>Quando o botão esquerdo do mouse é solto;</li>
+        <li><i>click - </i>Quando o botão esquerdo do mouse é clicado;</li>
+    </ul>
+    <br>
+    <h3>Lista de eventos</h3>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" rel="external">Lista do site da mozilla.</a></p>
+    <br>
+    <h3>Funcão</h3>
+    <p>Para disparar, ou tratar um evento, é necessário criar uma função. Um conjunto de código que será executado quando o evento ocorrer.</p>
+    <p>Esse código é escrito dentro de um bloco, ou seja { }, nomeando esse bloco como <i>function</i> e a ação.</p>
+    <p>Ex:</p>
+    <div class="codex"><code>function ação(){
+        <br>
+        <br>
+    &nbsp;&nbsp;&nbsp;}</code></div>
+    <br>
+    <h3>Exemplo 01</h3>
+    
+    <h4>No HTML</h4>
+    <div id="area0" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area0')
+        function clicar(){
+            a.innerText = 'Clicou.'
+            a.style.color = 'red'
+            a.style.background = 'black'
+            a.style.borderWidth = '2px','2px'
+            a.style.borderColor = 'red'
+            a.style.borderStyle = 'solid'
+        }
+        function entrar(){
+            a.style.color = 'white'
+            a.style.background = 'black'
+            a.style.borderWidth = '2px','2px'
+            a.style.borderColor = 'white'
+            a.style.borderStyle = 'solid'
+        }
+        function sair(){
+            a.innerText= 'Interaja...'
+            a.style.color = 'black'
+            a.style.background = 'white'
+            a.style.borderWidth = '2px','2px'
+            a.style.borderColor = 'white'
+            a.style.borderStyle = 'solid'
+        }
+    </script>
+    <div class="codlink"><a href="media/cod1.png" target="_blank" rel="external">Código</a></div>
+    <br>
+    <h4>No JavaScript</h4>
+    <div id="area1">
+        Interaja...
+    </div>
+    <script>
+        var b = window.document.getElementById('area1')
+        b.addEventListener('click', clicar1)
+        b.addEventListener('mouseenter', entrar1)
+        b.addEventListener('mouseout', sair1)
+        function clicar1(){
+            b.innerText = 'Clicou.'
+            b.style.color = 'red'
+            b.style.background = 'black'
+            b.style.borderWidth = '2px','2px'
+            b.style.borderColor = 'red'
+            b.style.borderStyle = 'solid'
+        }
+        function entrar1(){
+            b.style.color = 'white'
+            b.style.background = 'black'
+            b.style.borderWidth = '2px','2px'
+            b.style.borderColor = 'white'
+            b.style.borderStyle = 'solid'
+        }
+        function sair1(){
+            b.innerText= 'Interaja...'
+            b.style.color = 'black'
+            b.style.background = 'white'
+            b.style.borderWidth = '2px','2px'
+            b.style.borderColor = 'white'
+            b.style.borderStyle = 'solid'
+        }
+    </script>
+    <div class="codlink"><a href="media/cod2.png" target="_blank" rel="external">Código</a></div>
+    <br>
+    <h3>Exemplo 2</h3>
+    <h4>Somando números</h4>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> =
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="codlinkpq">
+        <a href="media/cod3.png" target="_blank" rel="external">Código</a>
+    </div><br>
+
+    <div id="res">Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}.`
+        }
+    </script>
+    
+    </div>
+    <br>
+    <a href="index.html">Índice</a>
+    <br>
+    <a href="01_dom.html">01 - Iniciando estudos com DOM</a>
+    <br>
+    
+</body>
+</html>
