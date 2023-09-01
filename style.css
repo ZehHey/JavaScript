@@ -25,8 +25,14 @@ a:hover{
     background-color: white;
     
 }
-
-
+.indice{
+    align-items: center;
+    margin-top: 30%;
+}
+.indice > a{
+    margin: auto;
+    text-align: center;
+}
 
 
 #diagrama>p{
