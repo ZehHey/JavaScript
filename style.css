@@ -2,7 +2,7 @@ body{
     background-color: black;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 15px;
+    margin-left: 5%;
 }
 
 h4{
@@ -17,15 +17,13 @@ a{
     max-width: 180px;
     border-radius: 5px;
     padding-left: 10px;
-    
-
 }
-
 a:hover{
     color: black;
     background-color: white;
     
 }
+
 .indice{
     align-items: center;
     margin-top: 30%;
@@ -42,7 +40,6 @@ a:hover{
     
     
 }
-
 #diagrama{
     display: block;
     max-width: 200px;
@@ -51,8 +48,7 @@ a:hover{
     padding: 15px 50px 25px 100px;
     justify-content: center;
     align-items:center;
-    position: inherit;  
-
+    position: inherit;
 }
 
 
@@ -69,17 +65,14 @@ a:hover{
 
 
 }
-
 .codlinkpq > a{
     height: 18px;
     color: white;
     background-color: black;
     font-size: 0.9em;
     display: contents;
-
     position: static;
 }
-
 .codlinkpq > a:hover{
     color: black;
 
@@ -131,17 +124,31 @@ input{
     margin: 10px 20px 40px 20px;
     display: inline-block;
 }
+
 .codex{
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    display: block;
+    
     max-width: 180px;
     display: inline-block;
     padding: 10px;
     border-radius: 9px;
-
 }
+.jsex{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    max-width: 450px;
+    padding: 10px 2px 0px 2px;
+    margin: 15px 15px 30px -15px;    
+}
+.jsex > pre{
+    margin: -10px 0px -10px -100px;
+    padding: 0px 2px 0px 2px;
+    max-width: 450px;    
+}
+
 #res{
     margin-bottom: 50px;
 }

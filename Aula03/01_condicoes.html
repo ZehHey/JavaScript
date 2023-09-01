@@ -7,7 +7,75 @@
     <title>Condiçoes</title>
 </head>
 <body>
+    <h1>Tipos de Condição pt1</h1>
+    <ul>
+        <li>Condição Simples;</li>
+        <div class="jsex">
+        <pre><code>
+                var vel = 60.5
+                console.log(`A velocidade é de ${vel}km/h`)
+                if (vel > 80) {
+                console.log('Você está acima da velocidade permitida!')
+                }
+                console.log('Dirija sempre com segurança')
+            </code>
+        </pre>
+        </div>
+        <br>
+        <li>Condição Composta;</li>
+        <div class="jsex">
+            <pre><code>
+                var pais = 'Brasil'
+                console.log(`Vivendo em ${pais}`)
+                if (pais == 'Brasil') {
+                console.log('Você é brasileiro.')
+                } else {
+                console.log('Você é estrangeiro.')}
+            </code>
+        </pre>
+        </div>
+    </ul>
     <br>
-    <a href="index.html">Índice</a>
+    <h2>Condição Simples</h2>
+    <p>Velocidade: <input type="number" name="txtvel" id="txtvel"> km/h <input type="button" value="Verificar" onclick="calcular()"><spam class="codlinkpq"><a href="media/cod01.png" target="_blank" rel="external">Código</a></spam></p>
+    
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}  km/h.</p></strong>`
+            if (vel > 80) {
+                res.innerHTML += `<p>Você foi <strong>multado</strong> por excesso de velocidade.</p>`
+            }
+        }
+    </script>
+    <br>
+    <h2>Condição Composta</h2>
+    <p>Digite o pais de origem: <input type="text" name="tpais" id="tpais"> <input type="button" value="Verificar" onclick="verifnac()"><spam class="codlinkpq"><a href="media/cod02.png" target="_blank" rel="external">Código</a></p>
+    <div id="res2">
+
+    </div>
+    <script>
+        function verifnac() {
+            var txpais = window.document.querySelector('input#tpais')
+            var txtpais = txpais.value
+            var res2 = window.document.querySelector('div#res2')
+            if (txtpais == 'Brasil'){
+                res2.innerHTML = `Você é brasileiro.`} else {
+                    res2.innerHTML = `Você é estrangeiro.`
+                }
+            
+        }
+    </script>
+
+
+
+    <br>
+    <a href="index.html">Índice</a><br>
+    <a href="02_condicoespt2.html">02 - Condições Pt2</a><br>
 </body>
 </html>
