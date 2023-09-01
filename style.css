@@ -16,6 +16,7 @@ a{
     display: block;
     max-width: 180px;
     border-radius: 5px;
+    padding-left: 10px;
     
 
 }
@@ -54,13 +55,6 @@ a:hover{
 
 }
 
-.codlink{
-    color: white;
-    background-color: black;
-    font-size: 1em;
-    display: inline-block;
-    margin-top: 0px;
-}
 
 .codlinkpq{
     color: white;
