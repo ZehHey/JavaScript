@@ -7,8 +7,133 @@
     <title>Condições pt2</title>
 </head>
 <body>
+    <h1>Tipos de condição pt2</h1>
+    <ul>
+        <li>Condições aninhadas;</li>
+        <div class="jsex">
+        <pre><code>
+                var idade = 98
+                if (idade <16) {
+                console.log('Não vota')
+                    } else if (idade < 18 || idade > 65) {
+                    console.log('Voto opcional')
+                    } else {
+                    console.log('Voto obrigatório')
+                    }
+            </code>
+        </pre>
+        </div>
+        <li>Condição Múltipla;</li>
+        <ul>
+            <li><p><i>Serve mais para valores fixos;</i></p></li>
+            <li><p><i>Comando <u>switch</u>;</i></p></li>
+            <li><p><i>Todo case precisa de um break</i></p></li>
+        </ul>
+        <div class="jsex">
+            <pre><code>
+                var agora = new Date()
+                var diaSem = agora.getDay()
+
+                switch(diaSem){
+                    case 0: 
+                        console.log('Domingo')
+                        break
+                    case 1: 
+                        console.log('Segunda-Feira')
+                        break
+                    case 2:
+                        console.log('Terça-Feira')
+                        break
+                    case 3:
+                        console.log('Quarta-Feira')
+                        break
+                    case 4:
+                        console.log('Quinta-Feira')
+                        break
+                    case 5: 
+                        console.log('Sexta-Feira')
+                        break
+                    case 6:
+                        console.log('Sábado')
+                        break
+                    default:
+                        console.log('Erro')
+                        break
+                }
+            </code>
+        </pre>
+        </div>
+
+    </ul>
+    <br>
+    <h2>Condições Aninhadas</h2>
+    <p>Idade: <input type="number" name="idade" id="idade"> anos.</p>
+    <p><input type="button" value="Verificar" onclick="voto()"><span class="codlinkpq"><a href="media/cod03.png" target="_blank" rel="external">Código</a></span></p>
+    <div id="res">
+        
+    </div>
+
+    
+    
+    <div class="codigojs">
+        <script>
+            function voto() {
+                var tidade = window.document.querySelector('input#idade')
+                var res = window.document.querySelector('div#res')
+                var txidade = Number(tidade.value)
+                if (txidade < 16) {
+                    res.innerHTML = '<p>Não vota</p>'
+                } else if (txidade <18 || txidade > 65) {
+                    res.innerHTML = '<p>Voto opcional</p>'
+                } else {
+                    res.innerHTML = '<p>Voto obrigatório!</p>'
+                }
+            }
+        </script>
+    </div>
+    
+    <br>
+    <h2>Condições Múltiplas</h2>
+    <p><input type="button" value="Hoje é...", onclick="hoje()"> <span id="res2"></span> <span class="codlinkpq"><a href="media/cod04.png" target="_blank" rel="external">Código</a></span></p>
+    
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+        var res2 = window.document.querySelector('span#res2')
+        function hoje() {
+            switch(diaSem){
+                case 0:
+                    res2.innerHTML = 'Domingo'
+                    break
+                case 1:
+                    res2.innerHTML = 'Segunda-Feira'
+                    break
+                case 2:
+                    res2.innerHTML = 'Terça-Feira'
+                    break
+                case 3:
+                    res2.innerHTML = 'Quarta-Feira'
+                    break
+                case 4:
+                    res2.innerHTML = 'Quinta-Feira'
+                    break
+                case 5:
+                    res2.innerHTML = 'Sexta-Feira'
+                    break
+                case 6:
+                    res2.innerHTML = 'Sábado'
+                    break
+                default:
+                    res2.innerHTML = 'Erro'
+                    break
+            }
+        }
+    </script>
+
     <br>
     <a href="index.html">Índice</a><br>
     <a href="01_condicoes.html">01 - Condições</a>
+    <br>
+    
 </body>
 </html>
