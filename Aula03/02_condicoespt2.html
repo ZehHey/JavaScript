@@ -23,6 +23,32 @@
             </code>
         </pre>
         </div>
+        <p>Idade: <input type="number" name="idade" id="idade"> anos.</p>
+        <p><input type="button" value="Verificar" onclick="voto()"><span class="codlinkpq"><a href="media/cod03.png" target="_blank" rel="external">Código</a></span></p>
+        <div id="res">
+        
+    </div>
+
+    
+    
+    <div class="codigojs">
+        <script>
+            function voto() {
+                var tidade = window.document.querySelector('input#idade')
+                var res = window.document.querySelector('div#res')
+                var txidade = Number(tidade.value)
+                if (txidade < 16) {
+                    res.innerHTML = '<p>Não vota</p>'
+                } else if (txidade <18 || txidade > 65) {
+                    res.innerHTML = '<p>Voto opcional</p>'
+                } else {
+                    res.innerHTML = '<p>Voto obrigatório!</p>'
+                }
+            }
+        </script>
+    </div>
+    
+    <br>
         <li>Condição Múltipla;</li>
         <ul>
             <li><p><i>Serve mais para valores fixos;</i></p></li>
@@ -63,38 +89,7 @@
             </code>
         </pre>
         </div>
-
-    </ul>
-    <br>
-    <h2>Condições Aninhadas</h2>
-    <p>Idade: <input type="number" name="idade" id="idade"> anos.</p>
-    <p><input type="button" value="Verificar" onclick="voto()"><span class="codlinkpq"><a href="media/cod03.png" target="_blank" rel="external">Código</a></span></p>
-    <div id="res">
-        
-    </div>
-
-    
-    
-    <div class="codigojs">
-        <script>
-            function voto() {
-                var tidade = window.document.querySelector('input#idade')
-                var res = window.document.querySelector('div#res')
-                var txidade = Number(tidade.value)
-                if (txidade < 16) {
-                    res.innerHTML = '<p>Não vota</p>'
-                } else if (txidade <18 || txidade > 65) {
-                    res.innerHTML = '<p>Voto opcional</p>'
-                } else {
-                    res.innerHTML = '<p>Voto obrigatório!</p>'
-                }
-            }
-        </script>
-    </div>
-    
-    <br>
-    <h2>Condições Múltiplas</h2>
-    <p><input type="button" value="Hoje é...", onclick="hoje()"> <span id="res2"></span> <span class="codlinkpq"><a href="media/cod04.png" target="_blank" rel="external">Código</a></span></p>
+        <p><input type="button" value="Hoje é...", onclick="hoje()"> <span id="res2"></span> <span class="codlinkpq"><a href="media/cod04.png" target="_blank" rel="external">Código</a></span></p>
     
     <script>
         var agora = new Date()
@@ -129,7 +124,7 @@
             }
         }
     </script>
-
+    </ul>
     <br>
     <a href="index.html">Índice</a><br>
     <a href="01_condicoes.html">01 - Condições</a>

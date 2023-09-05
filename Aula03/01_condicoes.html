@@ -21,23 +21,7 @@
             </code>
         </pre>
         </div>
-        <br>
-        <li>Condição Composta;</li>
-        <div class="jsex">
-            <pre><code>
-                var pais = 'Brasil'
-                console.log(`Vivendo em ${pais}`)
-                if (pais == 'Brasil') {
-                console.log('Você é brasileiro.')
-                } else {
-                console.log('Você é estrangeiro.')}
-            </code>
-        </pre>
-        </div>
-    </ul>
-    <br>
-    <h2>Condição Simples</h2>
-    <p>Velocidade: <input type="number" name="txtvel" id="txtvel"> km/h <input type="button" value="Verificar" onclick="calcular()"><spam class="codlinkpq"><a href="media/cod01.png" target="_blank" rel="external">Código</a></spam></p>
+        <p>Velocidade: <input type="number" name="txtvel" id="txtvel"> km/h <input type="button" value="Verificar" onclick="calcular()"><spam class="codlinkpq"><a href="media/cod01.png" target="_blank" rel="external">Código</a></spam></p>
     
     <div id="res">
 
@@ -53,27 +37,37 @@
             }
         }
     </script>
-    <br>
-    <h2>Condição Composta</h2>
-    <p>Digite o pais de origem: <input type="text" name="tpais" id="tpais"> <input type="button" value="Verificar" onclick="verifnac()"><spam class="codlinkpq"><a href="media/cod02.png" target="_blank" rel="external">Código</a></p>
-    <div id="res2">
-
-    </div>
-    <script>
-        function verifnac() {
-            var txpais = window.document.querySelector('input#tpais')
-            var txtpais = txpais.value
-            var res2 = window.document.querySelector('div#res2')
-            if (txtpais == 'Brasil'){
-                res2.innerHTML = `Você é brasileiro.`} else {
-                    res2.innerHTML = `Você é estrangeiro.`
+        <br>
+        <li>Condição Composta;</li>
+        <div class="jsex">
+            <pre><code>
+                var pais = 'Brasil'
+                console.log(`Vivendo em ${pais}`)
+                if (pais == 'Brasil') {
+                console.log('Você é brasileiro.')
+                } else {
+                console.log('Você é estrangeiro.')}
+            </code>
+        </pre>
+        </div>
+        <p>Digite o pais de origem: <input type="text" name="tpais" id="tpais"> <input type="button" value="Verificar" onclick="verifnac()"><spam class="codlinkpq"><a href="media/cod02.png" target="_blank" rel="external">Código</a></p>
+            <div id="res2">
+        
+            </div>
+            <script>
+                function verifnac() {
+                    var txpais = window.document.querySelector('input#tpais')
+                    var txtpais = txpais.value
+                    var res2 = window.document.querySelector('div#res2')
+                    if (txtpais == 'Brasil'){
+                        res2.innerHTML = `Você é brasileiro.`} else {
+                            res2.innerHTML = `Você é estrangeiro.`
+                        }
+                    
                 }
-            
-        }
-    </script>
-
-
-
+            </script>
+        
+    </ul>
     <br>
     <a href="index.html">Índice</a><br>
     <a href="02_condicoespt2.html">02 - Condições Pt2</a><br>
