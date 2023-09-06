@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exercício 01</title>
+    <title>Contador</title>
 </head>
-<body onload="carregar()">
-    <header id="titulo">Título</header>
+<body>
+    <header id="titulo">Vamos contar!</header>
     <section>
         <div>
-        
+        <p>Início:&nbsp; <input type="number" id="txtinicio" name="inicio"></p>
+        <p>Fim:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="txtfim" name="fim"></p>
+        <p>Passo: <input type="number" id="txtpasso" name="passo"></p>
+        <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
-        <div>
-        
+        <div id="res">
+            Preparando a contagem...
         </div>
     </section>
+    <br>
+    <a href="../index.html">Índice</a><br>
     <footer>Zeh Hey</footer>
     <script src="script.js"></script>
 </body>

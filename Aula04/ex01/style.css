@@ -27,7 +27,8 @@ section{
 }
 
 div {
-    text-align: center;
+    background-color: #cae3f8;
+    border-radius: 10px 10px 0px 0px;
     padding: 8px;
 }
 
@@ -36,4 +37,23 @@ footer {
     width: 100%;
     text-align: center;
     margin: 90px 0px 10px 0px;
+}
+#res {
+    background-color: #c3dbf0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: #cae3f8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+a:hover{
+    background-color: aliceblue;
+    font-size: 1.2em;
+    padding: 14px 7px;
 }
