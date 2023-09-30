@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Variáveis Compostas</title>
+</head>
+<body>
+    <h1>Variáveis compostas</h1>
+    <p>São variáveis capazes de armazenar vários valores em uma mesma estrutura. Podem ser chamadas de "vetor" ou "array".</p>
+    <div class="codex">
+        <pre>
+            let num = [8, 3, 7, 6]
+        </pre>
+        </div>
+    <p> O elemento de um vetor é um par que agrupa o espaço da memória, o valor colocado dentro dele e o índice.</p>
+    <p> O índice ou chave é a identificação da posição do elemento, sempre começando do 0. No exemplo acima, o valor 8 (que é o conteúdo do vetor) está no índice 0, o valor 3 está no índice 1, e assim sucessivamente.</p>
+    <p>Resumindo: um vetor é uma variável que tem vários elementos, cada elemento é composto por seu valor e por uma chave de identificação.</p>
+    <br>
+    <h2>Acrescentando um elemento</h2>
+    <p>Pode-se acrescentar um elemento em um array indicando o seu índice, por exemplo:</p>
+    <p><i>num[4] = 2</i></p>
+    <p>Ou usa-se o comando <i>.push</i>:</p>
+    <p><i>num.push(2)</i></p>
+    <div class="codex">
+        <pre>num = [8, 3, 7, 6, 2]</pre>
+    </div>
+    <br>
+    <h2>Outros comandos:</h2>
+    <ul>
+        <li><i>.length</i> = mostra a quantidade de elementos da variável.</li>
+        <li><i>.sort()</i> = organiza os elementos da variável em ordem crescente.</li>
+        <li><i>.indexOf(x)</i> = mostra a chave em que se encontra o elemento "x". Caso não exista o elemento retornará o valor -1</li>
+    </ul>
+    <br>
+    <h2>Utilizando repetição para exibir os elementos:</h2>
+    <ul>
+        <li>Ex 01:</li>
+        <div id="jsex">
+            <pre>
+                for (let pos=0; pos&lt;num.length; pos++) {
+                    console.log(num[pos])
+                }
+            </pre>
+        </div>
+        <br>
+        <li>Ex 02 (mais simplificado):</li>
+        <div id="jsex">
+            <pre>
+                for (let pos in num) {
+                    console.log(num[pos])
+                }
+            </pre>
+        </div>
+    </ul>
+    <br>
+    <a href="index.html">Índice</a>
+</body>
+</html>
