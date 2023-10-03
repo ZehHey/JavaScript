@@ -152,9 +152,10 @@ input{
     text-decoration: none;
     color: white;
     border: 1px solid white;
+    border-radius: 9px;
     max-width: 450px;
     padding: 10px 2px 0px 2px;
-    margin: 15px 15px 30px -15px;    
+    margin: 15px 15px 30px 0px;    
 }
 .jsex > pre{
     margin: -10px 0px -10px -100px;
